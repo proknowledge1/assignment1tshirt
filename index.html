@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Making</title>
+    
+    
+</head>
+<body>
+    <form action="" method="get" class="container">
+        <h1 class="mainheading">DESIGN YOUR T-SHIRT</h1>
+        <P>Mandatory feilds are marked with *</P>
+        <h2>CONTACT DETAILS</h2>
+        <br>
+        <p>Name: * <input type="text" name="fullname" id=fullname required placeholder="enter your name"></p>
+        <fieldset><legend>"Gender *"</legend><p>Male: <input type="radio" name="gender" id=male  required></p>
+        <p>Female:<input type="radio" name="gender" id="female"  required></p></fieldset>
+        <p>Email: * <input type="email" name="email" id="email"  required placeholder="example@gmail.com"></p>
+        <p>Address: <textarea name="address" rows=5 cols=20 id="address" placeholder="enter your address"></textarea></p>
+        <p>Pincode: * <input type="number" name="pincode" id="pincode" required placeholder="000000" maxlength="6"></p>
+        <br>
+        <hr>
+
+        <h2>T-shirt Details </h2>
+        <p>Size : *
+            <select name="size" id="size"  required>
+                <option value="">--Select the T-shirt size--</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="excel">Excel</option>
+            </select>
+        <p>quantity: * <input type="text" name="fullname" id=fullname required placeholder="quantity" min="1" max="9"></p>
+        <p>Tagline on the T-shirt: * <input type="text" name="fullname" id=fullname required placeholder="enter your tagline"></p>
+        
+        <p><label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"></p>
+        <p><label for="favimage">Select an image of your choice to be printed :</label>
+        <input type="file" id="myFile" name="filename">
+         
+
+        </p>
+        <h2>Payment Details</h2>
+        <p>Type of card : *
+            <select name="cardtype" id="cardtype"  required>
+                <option value="">--Select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+        </p>
+        <p>Card Number *: <input type="number" name="cardnumber" id="cardnumber" required placeholder="1111-2222-3333-4444" maxlength="19"> </p>
+        <p>CVV: *<input type="number" name="cvv" id="cvv" required maxlength="3"></p>
+        <p>Expiry date: *<input type="date" name="expdate" id="expdate" required></p>
+        <input type="submit" value="PAY NOW" name="submit">
+
+    </form>
+</body>
+</html>
